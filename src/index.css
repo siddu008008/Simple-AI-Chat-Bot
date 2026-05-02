@@ -61,3 +61,40 @@ body {
   margin-bottom: 8px;
   line-height: 1.6;
 }
+
+/* Custom Animations */
+@keyframes slideInUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation: slideInUp 0.3s ease-out forwards;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .prose {
+    font-size: 14px;
+  }
+  
+  .prose pre {
+    margin: 8px -4px;
+    border-radius: 0;
+  }
+}
+
+/* Smooth transitions */
+aside {
+  will-change: transform;
+}
+
+main {
+  width: 100%;
+}
