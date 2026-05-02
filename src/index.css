@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0058be;
+  --color-on-primary: #ffffff;
+  
+  /* Dark Mode Defaults */
+  --color-sidebar-bg: #05070a;
+  --color-main-bg: #0f1117;
+  --color-text-main: #e2e8f0;
+  --color-bubble-bot: #1e2027;
+  --color-border-main: #2d3139;
+  
+  --spacing-bubble-padding-y: 12px;
+  --spacing-bubble-padding-x: 16px;
+}
+
+/* Light Mode Overrides */
+.light-mode {
+  --color-sidebar-bg: #f8f9fb;
+  --color-main-bg: #ffffff;
+  --color-text-main: #191c1e;
+  --color-bubble-bot: #f0f1f3;
+  --color-border-main: #e2e4e8;
+}
+
+body {
+  background-color: var(--color-main-bg);
+  color: var(--color-text-main);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Markdown & Code Block Styling */
+.prose {
+  color: var(--color-text-main);
+  max-width: none;
+}
+
+.prose pre {
+  background-color: #010409 !important;
+  border: 1px solid var(--color-border-main);
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.prose code {
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+  color: inherit;
+}
+
+.prose p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
