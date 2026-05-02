@@ -243,10 +243,10 @@ function App() {
             </div>
           </button>
           <div className="flex items-center gap-3 px-2">
-            <div className="w-9 h-9 rounded-full bg-[var(--color-bubble-bot)] flex items-center justify-center text-blue-500 font-bold border border-[var(--color-border-main)]">US</div>
+            <div className="w-9 h-9 rounded-full bg-[var(--color-bubble-bot)] flex items-center justify-center text-blue-500 font-bold border border-[var(--color-border-main)]">SK</div>
             <div className="flex-1 overflow-hidden">
-              <p className="text-sm font-bold truncate">User Account</p>
-              <p className="text-[10px] text-gray-500">user@example.com</p>
+              <p className="text-sm font-bold truncate">Siddesh Ks</p>
+              <p className="text-[10px] text-gray-500">kssiddesh762@gmail.com</p>
             </div>
           </div>
         </div>
@@ -351,6 +351,9 @@ function App() {
             </div>
             <p className="text-[9px] md:text-[11px] text-center text-gray-500 mt-2.5 font-medium px-4">
               {cooldown ? "Wait 3s between messages." : "Simple AI Chat can make mistakes. Verify important info."}
+            </p>
+            <p className="text-[8px] md:text-[10px] text-center text-gray-500/50 mt-1 uppercase tracking-widest">
+              By Siddesh Ks
             </p>
           </div>
         </div>
